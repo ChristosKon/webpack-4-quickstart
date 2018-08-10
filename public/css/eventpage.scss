@@ -1,0 +1,132 @@
+@import 'variables';
+@import url('./creative.css');
+
+.top-offset {
+    margin-top: 50px;
+}
+
+.banner {
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 4rem;
+}
+
+.description {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+#event-description-header {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+
+#event-description {
+    transition: opacity .2s ease-out;
+}
+
+.standup {
+    background-color: $standup-event;
+    color: white !important;
+}
+
+.food {
+    background-color: $food-event;
+    color: white !important;
+}
+
+.party {
+    background-color: $party-event;
+    color: white !important;
+}
+
+.live {
+    background-color: $live-event;
+    color: white !important;
+}
+
+.live a {
+    color: #8a0c34;
+}
+
+.student {
+    background-color: $student-event;
+    color: white !important;
+}
+
+.traditional {
+    background-color: $traditional-event;
+    color: white !important;
+}
+
+.traditional a {
+    color: #3F51B5;
+}
+
+.theater {
+    background-color: $theater-event;
+    color: white !important;
+}
+
+.movie {
+    background-color: $movie-event;
+    color: white !important;
+}
+
+.movie a {
+    color: #114e44;
+}
+
+.latin {
+    background-color: $latin-event;
+}
+
+.latin a {
+    color: #ffed46;
+}
+
+.other {
+    background-color: $other-event;
+    color: white !important;
+}
+
+.other a {
+    color: #77f311;
+}
+
+.halloween {
+    background-color: $halloween-event;
+    color: white !important;
+}
+
+.christmas {
+    background-color: $christmas-event;
+    color: white !important;
+}
+
+.carnival {
+    background-color: $carnival-event;
+    color: white !important;
+}
+
+.carnival a {
+    color: #7f4b05;
+}
+
+#event-badge {
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 40px);
+}
+
+@media (min-width: 992px) {
+    .container.description .bordered-right {
+        border-right: 1px solid black;
+    }
+}

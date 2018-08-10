@@ -1,49 +1,15 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+'use strict';
 
+const validate = require('webpack-validator');
 
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
-      }
-    ]
-  },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
-    }),
-    new HtmlWebPackPlugin({
-      template: "./src/map.html",
-      filename: "./map.html"
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
-    new CopyWebpackPlugin([{      
-      from: "./_redirects",
-      to: './',
-    }], { debug: 'info' })
-  ]
-};
+const appConfig = require('./webpack.config.app');
+const siteConfig = require('./webpack.config.site');
+const adminConfig = require('./webpack.config.admin');
+const blogConfig = require('./webpack.config.blog');
+
+module.exports = [
+    validate(appConfig),
+    validate(siteConfig),
+    validate(adminConfig),
+    validate(blogConfig)
+];

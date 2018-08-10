@@ -1,0 +1,220 @@
+/*
+* Gmaps overrrides
+*/
+
+.gm-style-iw {
+    width: 303px !important;
+    top: 15px !important; // move the infowindow 15px down
+    left: 0 !important;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.gm-style-iw>* {
+    max-width: none !important;
+    width: 100% !important;
+    margin-bottom: -0.3rem;
+}
+
+.iw-contents {
+    padding: 0 !important;
+    width: 100% !important;
+    color:#000;
+    background-color:#fff;
+}
+
+.iw-contents-container>div {
+    margin-bottom: .3rem;
+}
+
+.iw-contents h4 {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.iw-contents-type {
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+
+.food .btn {
+    background-color: $food-event;
+}
+
+.food .iw-contents-type {
+    color: $food-event;
+}
+
+.iw-contents.food {
+    border: 2px solid $food-event;
+}
+
+.standup .btn {
+    background-color: $standup-event;
+}
+
+.standup .iw-contents-type {
+    color: $standup-event;
+}
+
+.iw-contents.standup {
+    border: 2px solid $standup-event;
+}
+
+.party .btn {
+    background-color: $party-event;
+}
+
+.party .iw-contents-type {
+    color: $party-event;
+}
+
+.iw-contents.party {
+    border: 2px solid $party-event;
+}
+
+.live .btn {
+    background-color: $live-event;
+}
+
+.live .iw-contents-type {
+    color: $live-event;
+}
+
+.iw-contents.live {
+    border: 2px solid $live-event;
+}
+
+.student .btn {
+    background-color: $student-event;
+}
+
+.student .iw-contents-type {
+    color: $student-event;
+}
+
+.iw-contents.student {
+    border: 2px solid $student-event;
+}
+
+.traditional .btn {
+    background-color: $traditional-event;
+}
+
+.traditional .iw-contents-type {
+    color: $traditional-event;
+}
+
+.iw-contents.traditional {
+    border: 2px solid $traditional-event;
+}
+
+.theater .btn {
+    background-color: $theater-event;
+}
+
+.theater .iw-contents-type {
+    color: $theater-event;
+}
+
+.iw-contents.theater {
+    border: 2px solid $theater-event;
+}
+
+.movie .btn {
+    background-color: $movie-event;
+}
+
+.movie .iw-contents-type {
+    color: $movie-event;
+}
+
+.iw-contents.movie {
+    border: 2px solid $movie-event;
+}
+
+.latin .btn {
+    background-color: $latin-event;
+}
+
+.latin .iw-contents-type {
+    color: $latin-event;
+}
+
+.iw-contents.latin {
+    border: 2px solid $latin-event;
+}
+
+.other .btn {
+    background-color: $other-event;
+}
+
+.other .iw-contents-type {
+    color: $other-event;
+}
+
+.iw-contents.other {
+    border: 2px solid $other-event;
+}
+
+.halloween .btn {
+    background-color: $halloween-event;
+}
+
+.halloween .iw-contents-type {
+    color: $halloween-event;
+}
+
+.iw-contents.halloween {
+    border: 2px solid $halloween-event;
+}
+
+.christmas .btn {
+    background-color: $christmas-event;
+}
+
+.christmas .iw-contents-type {
+    color: $christmas-event;
+}
+
+.iw-contents.christmas {
+    border: 2px solid $christmas-event;
+}
+
+.carnival .btn {
+    background-color: $carnival-event;
+}
+
+.carnival .iw-contents-type {
+    color: $carnival-event;
+}
+
+.iw-contents.carnival {
+    border: 2px solid $carnival-event;
+}
+
+.iw-contents .iw-contents-container {
+    padding: 1rem 2rem;
+}
+
+.iw-contents .show-more-text {
+    cursor: pointer;
+}
+
+.iw-source-container {
+    border-radius: 0 0 2px 2px;
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    padding-top: 0;
+}
+
+.iw-source-container .btn {
+    display: inline-block;
+    color: white;
+}

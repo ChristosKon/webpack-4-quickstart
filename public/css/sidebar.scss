@@ -1,0 +1,261 @@
+.mdl-layout__drawer {
+    // background: white;
+}
+
+.mdl-layout__drawer .mdl-navigation {
+    padding-top: 0;
+    height: calc(100% - 76.91px);
+}
+
+.mdl-layout__drawer {
+    width: $drawer-width-mobile; /*huehue*/
+    -webkit-transform: translateX(-$drawer-width-mobile);
+    transform: translateX(-$drawer-width-mobile);
+}
+
+.logo-area {
+    padding: 2rem 0 0;
+    margin-left: -40px;
+}
+
+.logo-area .logo {
+    width: 60%;
+    margin: 0px auto;
+    display: block;
+}
+
+.menu-area {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0px;
+    padding: 0 1.5rem;
+}
+
+.menu-area h4 {
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+h4 img {
+    position: relative;
+    bottom: 0.2rem;
+    margin-right: 0.3rem;
+}
+
+.filter-area p {
+    text-align: center;
+    color: #0b314a;
+}
+
+.btn-outline-primary {
+    color: #1c778c;
+    background-image: none;
+    background-color: transparent;
+    border-color: #1c778c;
+}
+
+.date-buttons>.btn {
+    padding: 6px 4px;
+}
+
+.datepicker {
+    cursor: pointer;
+}
+
+.ui-datepicker-inline {
+    width: 100%
+}
+
+.ui-datepicker {
+    margin-top: 6px;
+    margin-left: 14px;
+}
+
+.ui-widget-header {
+    border: 1px solid #1c778c;
+    background: #1c778c;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ui-widget-header .ui-state-hover {
+    background: none;
+    border: none;
+}
+
+.ui-datepicker-current-day .ui-state-active {
+    border: 1px solid #1c778c;
+    background: #1c778c;
+    color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    cursor: pointer;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.list-group-item a {
+    display: block;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.list-group-item a:hover {
+    background-color: #ebebeb;
+    border-left: 3px solid #1c778c;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+#option.in,
+#option.collapsing {
+    display: block!important;
+}
+
+.home-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+}
+
+.modal-body>.radio label,
+label.radio-inline {
+    padding-left: 30px;
+    margin-left: 0px;
+}
+
+.clear-me {
+    position: initial !important;
+}
+
+.modal-body>.form-group>label {
+    font-weight: initial;
+}
+
+.fb-buttons {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.rad {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    padding-left: 0px !important;
+}
+
+.rad>input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.rad>i {
+    /* DEFAULT <i> STYLE */
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: inset 0 0 0 8px #fff;
+    border: 1px solid gray;
+    background: gray;
+    margin-right: 6px;
+}
+
+.checkbox .rad>i {
+    border-radius: 3px;
+}
+
+.rad>input:checked+i {
+    /* (RADIO CHECKED) <i> STYLE */
+    box-shadow: inset 0 0 0 2px #fff;
+    background: #00838f;
+}
+
+.rad>input:checked+i+span {
+    color: #00838f;
+}
+
+#show-all-types {
+    margin-bottom: -0.3rem;
+}
+
+.sidebar-footer {
+    background: #fafafa;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.sidebar-footer__actions {
+    padding: 0 1rem;
+}
+
+.sidebar-footer__action {
+    height: 50px;
+    width: 50px;
+    float: right;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.sidebar-footer__action:hover {
+    opacity: 1;
+}
+
+.sidebar-footer__action a {
+    height: 100%;
+    display: block;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-footer__action a .regular {
+    display: inline-block;
+}
+
+.sidebar-footer__action a .alt {
+    display: none;
+}
+
+.sidebar-footer__action a.active .regular {
+    display: none;
+}
+
+.sidebar-footer__action a.active .alt {
+    display: inline-block;
+}
+
+.sidebar-footer__legend {
+    overflow: auto;
+}
+
+.sidebar-footer__legend .table {
+    margin-bottom: 0 !important;
+}
+
+.sidebar-footer__legend td {
+    vertical-align: middle !important;
+    border-top: none !important;
+}
+
+@media only screen and (min-width: 767px) {
+    .mdl-layout__drawer {
+        width: $drawer-width-desktop;
+        -webkit-transform: translateX(-$drawer-width-desktop);
+        transform: translateX(-$drawer-width-desktop);
+    }
+}

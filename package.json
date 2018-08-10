@@ -1,34 +1,71 @@
 {
-  "name": "webpack-4-quickstart",
+  "name": "athens_night",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "**Athens-night** will be soon the No1 place where everyone is going to find what's going on now, tonight or tomorrow in Athens' nightlife and music stage.",
+  "main": "webpack.config.js",
+  "engines": {
+    "node": "4.2.6",
+    "npm": "3.5.2"
   },
-  "keywords": [],
+  "scripts": {
+    "prod": "NODE_ENV='production' webpack",
+    "dev": "webpack --watch",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "stats": "WEBPACK_STATS='true' webpack",
+    "prod-stats": "WEBPACK_STATS='true' NODE_ENV='production' webpack",
+    "lint": "eslint --ext .jsx,.js public/js/",
+    "heroku-postbuild": "npm run prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athens-night/athens-night.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "copy-webpack-plugin": "^4.5.2",
-    "css-loader": "^1.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.1",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+  "bugs": {
+    "url": "https://github.com/athens-night/athens-night/issues"
   },
+  "homepage": "https://github.com/athens-night/athens-night#readme",
   "dependencies": {
-    "react-router-dom": "^4.3.1"
+    "autotrack": "^1.0.3",
+    "bluebird": "^3.4.7",
+    "bootstrap": "^3.3.7",
+    "chosen-js": "^1.6.2",
+    "clipboard": "^1.6.0",
+    "clockpicker": "0.0.7",
+    "gentelella": "https://github.com/puikinsh/gentelella.git",
+    "jquery": "^3.1.1",
+    "jquery-touchswipe": "^1.6.15",
+    "jquery-ui": "^1.12.1",
+    "jquery.easing": "^1.4.1",
+    "lodash": "^4.17.4",
+    "material-design-lite": "^1.3.0",
+    "moment": "^2.17.1",
+    "react": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "redux": "^3.6.0",
+    "spinkit": "^1.2.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.16.1",
+    "eslint-plugin-react": "^6.10.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "system-bell-webpack-plugin": "^1.0.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-bundle-analyzer": "^1.3.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-validator": "^2.2.7"
   }
 }

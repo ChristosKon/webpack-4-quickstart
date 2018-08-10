@@ -1,0 +1,22 @@
+@import url('./creative.css');
+
+.logo1 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    max-height: 100px;
+}
+.message {
+    margin-top: 100px;
+    margin-bottom:100px;
+    text-align: center;
+    background-color: white;
+}
+.message h2 {
+    margin-bottom:30px;
+}
+@media (max-width: 767px) {
+    .dog {
+        width: 80%;
+    }
+}
