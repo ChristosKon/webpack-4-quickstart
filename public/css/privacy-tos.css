@@ -1,0 +1,18 @@
+@import url('./creative.css');
+.privacy-head {
+    background-color: #880e4f;
+}
+
+.privacy-title {
+    text-align: center;
+    color: #fafafa;
+}
+
+.par-title {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.par-text {
+    text-align: justify;
+}

@@ -1,0 +1,34 @@
+#subscribe-prompt {
+    position: absolute;
+    opacity: 1;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: #212121;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+#subscribe-prompt .container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    height: 100%;
+}
+
+#subscribe-prompt .sub-desc {
+    position: relative;
+    top: -1.2rem;
+    padding-right: 1rem;
+}
+
+#subscribe-prompt .input-group {
+    max-width: 300px;
+    display: inline-table;
+}
+
+#subscribe-prompt .close {
+    position: relative;
+    top: 0.4rem;
+    color: white;
+}

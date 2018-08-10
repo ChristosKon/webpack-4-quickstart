@@ -1,0 +1,24 @@
+@import url('./creative.css');
+.venue-head {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    background-color: #00838f;
+}
+
+.img-header {
+    text-align: center;
+}
+
+.img-header h2 {
+    color: #fafafa;
+}
+
+.venues-map img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+#intro {
+    font-size: 16px;
+}

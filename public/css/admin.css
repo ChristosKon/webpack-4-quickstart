@@ -1,0 +1,40 @@
+@import url('~gentelella/vendors/nprogress/nprogress.css');
+@import url('~gentelella/vendors/iCheck/skins/flat/green.css');
+@import url('~gentelella/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css');
+@import url('~gentelella/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css');
+@import url('~gentelella/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css');
+@import url('~gentelella/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css');
+@import url('~gentelella/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css');
+@import url('~gentelella/vendors/switchery/dist/switchery.min.css');
+@import url('~chosen-js/chosen.css');
+@import url('~clockpicker/dist/bootstrap-clockpicker.min.css');
+@import url('~gentelella/build/css/custom.css');
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: lightblue;
+    border-color: #adadad;
+}
+
+.contactSupport {
+    color: limegreen;
+}
+
+.contactSupport:hover {
+    color: darkgreen;
+}
+
+/*
+ * Fix for daterange picker
+ */
+.daterangepicker .ranges {
+    width: auto;
+    clear: both;
+}
+
+.daterangepicker .calendar.left {
+    float: left !important;
+}
+/**/

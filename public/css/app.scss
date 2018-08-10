@@ -1,0 +1,64 @@
+/* The tilde ~ instructs webpack to look in the node_modules folder */
+@import '~material-design-lite/src/_variables.scss';
+@import '~material-design-lite/src/_variables.scss';
+@import '~material-design-lite/src/_mixins.scss';
+@import '~material-design-lite/src/layout/_layout.scss';
+@import '~material-design-lite/src/snackbar/_snackbar.scss';
+@import '~material-design-lite/src/button/_button.scss';
+@import '~material-design-lite/src/ripple/_ripple.scss';
+@import '~material-design-lite/src/tooltip/_tooltip.scss';
+@import 'variables';
+@import './subscribe-prompt';
+@import './sidebar';
+@import './map';
+@import './eventslist';
+
+a {
+  color: $text-link-color;
+  font-weight: 500;
+}
+
+#mymap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mdl-layout__drawer-button {
+    color: white;
+    border-radius: 100px;
+    background: rgba(96, 125, 139, 0.5);
+}
+
+.mdl-layout--fixed-drawer>.mdl-layout__content {
+    margin-left: $drawer-width-mobile;
+}
+
+.m-t-1 {
+    margin-top: 1em;
+}
+
+.modal p {
+    font-weight: 400;
+}
+
+.mdl-snackbar {
+    z-index: 6;
+}
+
+.feedback-area {
+    margin-top: 3rem;
+}
+
+@media only screen and (min-width: 767px) {
+    .mdl-layout--fixed-drawer>.mdl-layout__content {
+        margin-left: $drawer-width-desktop;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout--fixed-drawer>.mdl-layout__content {
+        margin-left: 0;
+    }
+}

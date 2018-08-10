@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>webpack 4 quickstart</title>
-</head>
-<body>
-    <a href="/map.html">MAP</a>
-    <div id="nav"></div>
-    <div id="app"></div>
-</body>
+<html lang="el">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Βρες μέσα από έναν διαδραστικό χάρτη όλα τα events της νυχτερινής Αθήνας και διάλεξε για την έξοδό σου αυτό που σου ταιριάζει καλύτερα.">
+        <title>
+            Athens Night - Χάρτης με όλα τα events της νυχτερινής Αθήνας</title>
+        <meta property="og:title" content="Athens Night - Χάρτης με όλα τα events της νυχτερινής Αθήνας"/>
+        <meta property="og:url" content="https://www.athens-night.gr/map"/>
+        <meta property="og:description" content="Βρες μέσα από έναν διαδραστικό χάρτη όλα τα events της νυχτερινής Αθήνας και διάλεξε για την έξοδό σου αυτό που σου ταιριάζει καλύτερα."/>
+        <meta property="og:image" content="/img/home/open_graph_image_logo.png"/>
+        {# Favicon #}
+        <link rel='icon' href='/img/home/favicon.png' type='image/png'/>
+        <!-- Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Assets -->
+        <link rel="prefetch" href="/img/home/map-marker15x15.png">
+        <link href="/dist/app/vendor.bundle.css" rel="stylesheet">
+        <link href="/dist/app/main.bundle.css" rel="stylesheet">
+        <script src="/dist/app/manifest.js"></script>
+        <script src="/dist/app/vendor.bundle.js"></script>
+    </head>
+
+    <body>
+        <div id="app"></div>
+
+        <!-- Snackbar -->
+        <div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button type="button" class="mdl-snackbar__action"></button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Η γνώμη σου μετράει :)
+                        </h4>
+                    </div>
+                    <div class="modal-body clearForm">
+                        <p>Από το 1 έως το 10, πόσο πιθανό είναι να προτείνεις το Athens Night σε φίλους/γνωστούς σου; (1 - Καθόλου, 10 - Σίγουρα)</p>
+                        <label class="radio-inline"><input type="radio" name="score" value="1">
+                            1
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="2">
+                            2
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="3">
+                            3
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="4">
+                            4
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="5">
+                            5
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="6">
+                            6
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="7">
+                            7
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="8">
+                            8
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="9">
+                            9
+                        </label>
+                        <label class="radio-inline"><input type="radio" name="score" value="10">
+                            10
+                        </label>
+                        <div class="form-group m-t-1">
+                            <label for="comment">Ποιός ειναι ο πιο σημαντικός λόγος για το παραπάνω score?</label>
+                            <textarea class="form-control" rows="5" name="score_reason" id="score_reason"></textarea>
+                        </div>
+                        <div class="form-group" style="display:none;">
+                            <label for="email">Email (Προαιρετικό)</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Κλεισιμο</button>
+                        <button type="submit" id="submitBtn" class="btn btn-primary">Αποστολη</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/dist/app/main.bundle.js"></script>
+
+    </body>
+
 </html>
